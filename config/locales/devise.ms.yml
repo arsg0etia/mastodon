@@ -81,12 +81,18 @@ ms:
       failure: Tidak dapat mengesahkan anda daripada %{kind} disebabkan oleh “%{reason}”.
       success: Berjaya disahkan daripada akaun %{kind}.
     passwords:
+      no_token: Anda tidak boleh mengakses halaman ini tanpa datang daripada e-mel tetapan semula kata laluan. Jika anda datang daripada e-mel tetapan semula kata laluan, sila pastikan anda menggunakan URL penuh yang disediakan.
+      send_instructions: Jika alamat e-mel anda wujud dalam pangkalan data kami, anda akan menerima pautan pemulihan kata laluan di alamat e-mel anda dalam beberapa minit. Sila semak folder spam anda jika anda tidak menerima e-mel ini.
+      send_paranoid_instructions: Jika alamat e-mel anda wujud dalam pangkalan data kami, anda akan menerima pautan pemulihan kata laluan di alamat e-mel anda dalam beberapa minit. Sila semak folder spam anda jika anda tidak menerima e-mel ini.
       updated: Kata laluan anda telah berjaya ditukar. Anda telah didaftar masuk.
       updated_not_active: Kata laluan anda telah berjaya ditukar.
     registrations:
       destroyed: Selamat tinggal! Akaun anda telah berjaya dibatalkan. Kami harap berjumpa lagi.
       signed_up: Selamat datang! Anda telah berjaya mendaftar.
       signed_up_but_inactive: Anda telah berjaya mendaftar. Namun, kami tidak dapat mendaftar masuk anda kerana akaun anda belum diaktifkan.
+      signed_up_but_locked: Anda telah berjaya mendaftar. Walau bagaimanapun, kami tidak dapat melog masuk anda kerana akaun anda dikunci.
+      signed_up_but_pending: Mesej dengan pautan pengesahan telah dihantar ke alamat e-mel anda. Selepas anda mengklik pautan, kami akan menyemak permohonan anda. Anda akan dimaklumkan jika ia diluluskan.
+      signed_up_but_unconfirmed: Mesej dengan pautan pengesahan telah dihantar ke alamat e-mel anda. Sila ikuti pautan untuk mengaktifkan akaun anda. Sila semak folder spam anda jika anda tidak menerima e-mel ini.
     sessions:
       already_signed_out: Daftar keluar berjaya.
       signed_in: Daftar masuk berjaya.
@@ -95,3 +101,4 @@ ms:
     messages:
       already_confirmed: sudah disahkan, sila cuba mendaftar masuk
       not_found: tidak dijumpai
+      not_locked: tidak dikunci

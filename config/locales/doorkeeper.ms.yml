@@ -4,21 +4,84 @@ ms:
     attributes:
       doorkeeper/application:
         name: Nama aplikasi
+        redirect_uri: Ubah hala URI
+        scopes: Skop
+        website: Laman web permohonan
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: tidak boleh mengandungi serpihan.
+              invalid_uri: mestilah URI yang sah.
+              relative_uri: mestilah URI mutlak.
+              secured_uri: mestilah URI HTTPS/SSL.
   doorkeeper:
     applications:
       buttons:
+        authorize: Benarkan
         cancel: Batal
+        destroy: Musnah
         edit: Sunting
         submit: Hantar
       confirmations:
         destroy: Anda pasti?
+      edit:
+        title: Mengedit permohonan
+      form:
+        error: Alamak! Semak borang anda untuk kemungkinan kesilapan
+      help:
+        native_redirect_uri: Gunakan %{native_redirect_uri} untuk ujian tempatan
+        redirect_uri: Gunakan satu barisan setiap URI
+        scopes: Asingkan skop dengan ruang. Biarkan kosong untuk menggunakan skop lalai.
       index:
+        application: Aplikasi
+        callback_url: URL callback
         delete: Padam
+        empty: Anda tidak mempunyai aplikasi.
         name: Nama
+        new: Aplikasi baru
+        scopes: Skop
         show: Paparkan
+        title: Aplikasi anda
+      new:
+        title: Aplikasi baru
+      show:
+        actions: Tindakan
+        application_id: Kunci klien
+        callback_urls: URLs Callback
+        scopes: Skop
+        secret: Rahsia klien
+        title: 'Aplikasi: %{name}'
+    authorizations:
+      buttons:
+        authorize: Benarkan
+        deny: Nafikan
+      error:
+        title: Ralat telah berlaku
+      new:
+        title: Kebenaran diperlukan
+      show:
+        title: Salin kod kebenaran ini dan tampalkannya pada aplikasi.
     authorized_applications:
+      buttons:
+        revoke: Batalkan
+      confirmations:
+        revoke: Adakah anda pasti?
       index:
+        authorized_at: Dibenarkan on %{date}
+        description_html: Ini adalah aplikasi yang boleh mengakses akaun lalui kegunaan API. Jika terdapat aplikasi yang anda tidak kenali di sini, atau aplikasi tidak berfungsi, anda boleh membatalkan aksesnya.
+        never_used: Tidak pernah digunakan
+        scopes: Kebenaran
         superapp: Dalaman
+        title: Aplikasi anda your dibenarkan
+    errors:
+      messages:
+        invalid_redirect_uri: Uri ubah hala yang disertakan tidak sah.
+        invalid_request:
+          missing_param: 'Parameter yang diperlukan hilang: %{value}.'
+          request_not_authorized: Permintaan perlu dibenarkan. Parameter yang diperlukan untuk membenarkan permintaan tiada atau tidak sah.
+          unknown: Permintaan itu tidak mempunyai parameter yang diperlukan, termasuk nilai parameter yang tidak disokong, atau sebaliknya salah bentuk.
     flash:
       applications:
         create:
@@ -46,6 +109,16 @@ ms:
       admin:read:accounts: baca maklumat sensitif untuk semua akaun
       admin:read:reports: baca maklumat sensitif untuk semua laporan dan akaun-akaun yang dilaporkan
       admin:write: mengubah semua data pada pelayan
+      read:accounts: lihat maklumat akaun
+      read:blocks: lihat blok anda
+      read:bookmarks: lihat penanda halaman anda
+      read:favourites: lihat kegemaran anda
+      read:filters: lihat penapis anda
+      read:follows: lihat senarai yang anda ikuti
+      read:lists: lihat senarai anda
+      read:mutes: lihat senarai yang anda senyapkan
+      read:notifications: lihat notifikasi anda
+      read:reports: lihat laporan anda
       read:statuses: lihat semua hantaran
       write:bookmarks: menandabuku hantaran
       write:statuses: terbitkan hantaran

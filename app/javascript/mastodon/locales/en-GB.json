@@ -235,7 +235,7 @@
   "empty_column.follow_requests": "You don't have any follow requests yet. When you receive one, it will show up here.",
   "empty_column.followed_tags": "You have not followed any hashtags yet. When you do, they will show up here.",
   "empty_column.hashtag": "There is nothing in this hashtag yet.",
-  "empty_column.home": "Your home timeline is empty! Follow more people to fill it up. {suggestions}",
+  "empty_column.home": "Your home timeline is empty! Follow more people to fill it up.",
   "empty_column.list": "There is nothing in this list yet. When members of this list post new statuses, they will appear here.",
   "empty_column.lists": "You don't have any lists yet. When you create one, it will show up here.",
   "empty_column.mutes": "You haven't muted any users yet.",
